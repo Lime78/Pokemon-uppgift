@@ -4,16 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script type="module" src="script.js"></script>
+    
+    <title>Pokemon</title>
   </head>
   <body>
     <header>
-      <img src="Pokemon-2023-12-07 (4).png" alt="rubrik" class="top-image" />
-      <img src="TEAM-NAME-2023-12-07.png" alt="lagnamn" class="bottom-image" />
+      <div class="img-container">
+      <img src="Pokemon-2023-12-07 (4).png" alt="rubrik" id="pokemon-bild" class="top-image" />
+      <img src="TEAM-NAME-2023-12-07.png" alt="lagnamn" id="nedre-bild" class="bottom-image" />
+      <div class="image-container">
+      <img src="007Squirtle.webp" alt="squirtle" id="vänster-bild" class="left-image" />
+      <img src="001.png" alt="bulbasaur" id="mitten-bild" class="center-image" />
+      <img src="pkm-charmander-512x512.png" alt="charmender" id="höger-bild" class="right-image" />
+      </div>
+      <img src="Play-2023-12-07.png" alt="play-knapp" id="start-knapp" class="btn-play-image" />
+    </div>
     </header>
     <div id="hide-on-play" class="page">
         <label for="player-input">Namn:</label>
         <input id="player-input" type="text">
-        <p class="difficulty" id="error-message"></p>
+        <p class="felmeddelande" id="error-message"></p>
+
+        <div class="pick-container">
+          <div class="pick-team-img">
+            <img src="Pick-your-team-2023-12-07.png" alt="väljLag" id="välj-lag"/>
+          </div>
+        </div>
   </body>
 </html>
