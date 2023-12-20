@@ -10,7 +10,7 @@ body {
 
 .header {
   position: relative;
-height: 100vh;
+  height: 100vh;
 } 
 
 .image-container {
@@ -20,7 +20,8 @@ align-items: center;
 }
 .top-image,
 .bottom-image,
-.play-image
+.play-image,
+.top-bild
 {
 position: absolute;
 max-width: 20rem;
@@ -56,6 +57,10 @@ transform: translateX(-50%);
 cursor: pointer;
 }
 
+.top-bild {
+  top:0;
+}
+
 
 label {
 margin: 0.5rem;
@@ -76,12 +81,66 @@ padding: 0.5em;
 }
 
 .page {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: calc(7rem + 3rem);
   left: 50%;
   transform: translateX(-50%);
 }
+
+#searchForm {
+  display: none;
+  margin-top: 6em;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* .boxar {
+  display: none;
+  grid-template-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 2em; 
+  justify-items: center;
+  align-items: center;
+  margin-top: 7em;
+  width: 300px;
+  height: 90px;
+  flex-shrink: 0;
+  background: #F47500;
+  border-radius: 35px;
+} */
+
+.boxar {
+  padding: 40px;
+    margin: 0 auto;
+}
+
+#pokedex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+}
+
+
+
+/* .div1, 
+.div2,
+.div3,
+.div4,
+.div5 {
+  width: 300px;
+  height: 90px;
+  flex-shrink: 0;
+  background: #F47500;
+  border-radius: 35px;
+} */
+
+/* display none, visibilety class list remove, add*/

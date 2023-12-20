@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script type="module" src="script.js"></script>
-    
-    <title>Pokemon</title>
+    <script src="script.js"></script>
+     
+     <title>Pokemon</title>
   </head>
   <body>
+     <img src="Play-2023-12-07.png" alt="play-knapp" id="start-knapp" class="btn-play-image" onclick="toggleVisibility()" />
+
+    <div class="pick-team-container">
+      <img src="Pick-your-team-2023-12-07.png" alt="senare-rubrik" id="välj-lag" class="top-bild" /> 
+     
+  
+    <script src="fetch.js"></script>
+    </div>
+        </div>
+
+          <div class="boxar">
+            <ul id="pokedex"></ul>
+            <!-- <div class="div1"></div>
+            <div class="div2"></div>
+            <div class="div3"></div>
+            <div class="div4"></div>
+            <div class="div5"></div> -->
+          </div> 
+             <!-- inte göra förbestämda rutor utan låt de loopa -->
+
     <header>
+          <div class="header-container">
+
+          </div>
+    </header>
       <div class="img-container">
       <img src="Pokemon-2023-12-07 (4).png" alt="rubrik" id="pokemon-bild" class="top-image" />
       <img src="TEAM-NAME-2023-12-07.png" alt="lagnamn" id="nedre-bild" class="bottom-image" />
@@ -18,18 +42,12 @@
       <img src="001.png" alt="bulbasaur" id="mitten-bild" class="center-image" />
       <img src="pkm-charmander-512x512.png" alt="charmender" id="höger-bild" class="right-image" />
       </div>
-      <img src="Play-2023-12-07.png" alt="play-knapp" id="start-knapp" class="btn-play-image" />
-    </div>
-    </header>
+    
     <div id="hide-on-play" class="page">
         <label for="player-input">Namn:</label>
         <input id="player-input" type="text">
         <p class="felmeddelande" id="error-message"></p>
-
-        <div class="pick-container">
-          <div class="pick-team-img">
-            <img src="Pick-your-team-2023-12-07.png" alt="väljLag" id="välj-lag"/>
-          </div>
-        </div>
+          </div> 
+          
   </body>
 </html>
