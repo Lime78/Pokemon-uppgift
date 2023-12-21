@@ -7,7 +7,7 @@
     const högerBild = document.getElementById("höger-bild");
     const väljLag = document.querySelector("#välj-lag");
     const pokemonBild = document.querySelector("#pokemon-bild");
-    const searchForm = document.querySelector("#searchInput")
+    const searchInput = document.querySelector("#searchInput")
   
       playButton.addEventListener("click", function() {
       pageToHide.style.display = "none";
@@ -18,13 +18,8 @@
       playButton.style.display = "none";
       pokemonBild.style.display = "none";
     });
-  
-    document.getElementById("searchForm").addEventListener("submit", function(event) {
-      event.preventDefault(); 
-      var searchQuery = document.getElementById("searchInput").value;
-      console.log("Sökning: ", searchQuery);
-    });
-  });  //sökväg tror ja
+
+  });  
 
 function toggleVisibility() {
   var boxarElement = document.querySelector(".boxar");
@@ -37,25 +32,3 @@ function toggleVisibility() {
   }
 }
 
-// document.getElementById("searchForm").addEventListener("submit", function(event) {
-//   event.preventDefault(); 
-
-  
-//   var searchQuery = document.getElementById("searchInput").value;
-
- 
-//   console.log("Sökning: ", searchQuery);
-// }); sökvägen
-
-
-
-// function toggleVisibility() {
-//   var topBildElement = document.querySelector("bild");
-//   var computedStyle = window.getComputedStyle(topBildElement);
-
-//   if (computedStyle.display === "none") {
-//     topBildElement.style.display = "flex";
-//   } else {
-//     topBildElement.style.display = "none";
-//   }
-// }
