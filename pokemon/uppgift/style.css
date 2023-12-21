@@ -57,6 +57,16 @@ transform: translateX(-50%);
 cursor: pointer;
 }
 
+.btn-team-image {
+  top: 40rem;
+  position: absolute;
+  width: 13rem;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
 .top-bild {
   top:0;
 }
