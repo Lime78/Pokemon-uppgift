@@ -9,24 +9,26 @@
      <title>Pokemon</title>
   </head>
   <body>
+
+    <!-- sökruta i api -->
+    <div class="boxar">
+      <form id="searchForm">
+        <input type="text" id="searchInput" placeholder="Search Pokemon">
+        <button id="searchButton">Search</button>
+      </form>
+      <ul id="pokedex"></ul>
+    <div id="pokedex"></div>
+  </div>
+
+  <!-- hoppa mellan de olika vy erna -->
      <img src="Play-2023-12-07.png" alt="play-knapp" id="start-knapp" class="btn-play-image" onclick="toggleVisibility()" />
-     <img src="MY-TEAM-2023-12-08.png" alt="team-knapp" id="lag-knapp" class="btn-team-image" onclick="toggleVisibility()"/>
+     <img src="MY-TEAM-2023-12-08.png" alt="team-knapp" id="lag-knapp" class="btn-team-image" onclick="toggleVisibility()"/> <!--använd inte onclick-->
 
     <div class="pick-team-container">
-      <img src="Pick-your-team-2023-12-07.png" alt="senare-rubrik" id="välj-lag" class="top-bild" /> 
+      <img src="Pick-your-team-2023-12-07.png" alt="senare-rubrik" id="välj-lag" class="top-bild" onclick="toggleVisibility()"/> 
      
-  
-    <script src="fetch.js"></script>
     </div>
         </div>
-
-          <div class="boxar">
-            <input type="text" id="searchInput" placeholder="Search...">
-              <button id="searchButton">Search</button>
-
-                  <ul id="pokedex"></ul>
-            <div id="pokedex"></div>
-          </div> 
 
     <header>
           <div class="header-container">
@@ -42,11 +44,17 @@
       <img src="pkm-charmander-512x512.png" alt="charmender" id="höger-bild" class="right-image" />
       </div>
     
+
+      <!-- lag namn  -->
     <div id="hide-on-play" class="page">
         <label for="player-input">Namn:</label>
         <input id="player-input" type="text">
         <p class="felmeddelande" id="error-message"></p>
           </div> 
+        </div>
+
           
+            
+
   </body>
 </html>

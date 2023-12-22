@@ -21,7 +21,7 @@ align-items: center;
 .top-image,
 .bottom-image,
 .play-image,
-.top-bild
+.top-bild 
 {
 position: absolute;
 max-width: 20rem;
@@ -48,7 +48,7 @@ top: 15rem;
 }
 
 .btn-play-image {
-top: 34rem;
+top: 30rem;
 position: absolute;
 width: 13rem;
 height: auto;
@@ -123,32 +123,48 @@ padding: 0.5em;
 }
 
 #pokedex {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 20px;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    justify-items: center;
     align-items: center;
+}
+
+.card {
+  list-style: none;
+  width: 300px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  color: #222;
+  text-align: center;
+  background: #F47500;
 }
 
 .card-image{
   grid-template-columns: 1fr;
   grid-column-gap: 0px;
-  grid-row-gap: 2em; 
-  font-size: 5em;
+  font-size: 6em;
 }
 
 .card-title{
   grid-template-columns: 1fr;
   grid-column-gap: 0px;
-  grid-row-gap: 2em; 
   font-size: 1,3em;
 }
 
 .card-subtitle {
   grid-template-columns: 1fr;
   grid-column-gap: 0px;
-  grid-row-gap: 2em; 
   font-size: 1,3em;
 }
+
+.my-team-container {
+  display: flex;
+  width: 5em;
+  height: 2em;
+  background-color: #080808;
+} 
+
 
 /* display none, visibilety class list remove, add*/
